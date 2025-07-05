@@ -32,7 +32,7 @@ const Dashboard = () => {
           <SkeletonLoader type="stats" />
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <Card className="border-forest-green-700">
+            <Card className="border-sage-green-500">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium text-forest-green-700">Total Jaminan</CardTitle>
                 <Wallet className="h-4 w-4 text-forest-green-600" />
@@ -44,7 +44,7 @@ const Dashboard = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="border-forest-green-700">
+            <Card className="border-sage-green-500">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium text-forest-green-700">Pinjaman Aktif</CardTitle>
                 <CreditCard className="h-4 w-4 text-forest-green-600" />
@@ -54,7 +54,7 @@ const Dashboard = () => {
                 <p className="text-xs text-forest-green-600">2 pinjaman aktif</p>
               </CardContent>
             </Card>
-            <Card className="border-forest-green-700">
+            <Card className="border-sage-green-500">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium text-forest-green-700">Health Factor</CardTitle>
                 <TrendingUp className="h-4 w-4 text-forest-green-600" />
@@ -91,7 +91,7 @@ const Dashboard = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Portfolio Overview */}
-          <Card className="border-forest-green-700">
+          <Card className="border-sage-green-500">
             <CardHeader>
               <CardTitle className="text-forest-green-800">Portfolio Jaminan</CardTitle>
               <CardDescription className="text-forest-green-600">Aset crypto yang digunakan sebagai jaminan</CardDescription>
@@ -101,7 +101,7 @@ const Dashboard = () => {
                 <SkeletonLoader type="card" />
               ) : (
                 <div className="space-y-4">
-                  <div className="flex items-center justify-between p-3 border border-forest-green-700 rounded-lg">
+                  <div className="flex items-center justify-between p-3 border border-sage-green-500 rounded-lg">
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
                         <span className="text-white text-xs font-bold">BTC</span>
@@ -116,7 +116,7 @@ const Dashboard = () => {
                       <p className="text-sm text-lime-green-500">+2.3%</p>
                     </div>
                   </div>
-                  <div className="flex items-center justify-between p-3 border border-forest-green-700 rounded-lg">
+                  <div className="flex items-center justify-between p-3 border border-sage-green-500 rounded-lg">
                     <div className="flex items-center space-x-3">
                       <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                         <span className="text-white text-xs font-bold">ETH</span>
@@ -137,7 +137,7 @@ const Dashboard = () => {
           </Card>
 
           {/* Recent Transactions */}
-          <Card className="border-forest-green-700">
+          <Card className="border-sage-green-500">
             <CardHeader>
               <CardTitle className="text-forest-green-800">Transaksi Terbaru</CardTitle>
               <CardDescription className="text-forest-green-600">Aktivitas terbaru pada akun Anda</CardDescription>
@@ -148,7 +148,7 @@ const Dashboard = () => {
               ) : (
                 <Table>
                   <TableHeader>
-                    <TableRow className="border-forest-green-700">
+                    <TableRow className="border-sage-green-500">
                       <TableHead className="text-forest-green-700">Tanggal</TableHead>
                       <TableHead className="text-forest-green-700">Tipe</TableHead>
                       <TableHead className="text-forest-green-700">Jumlah</TableHead>
@@ -156,19 +156,19 @@ const Dashboard = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow className="border-forest-green-700">
+                    <TableRow className="border-sage-green-500">
                       <TableCell className="text-forest-green-600">10 Jun 2024</TableCell>
                       <TableCell className="text-forest-green-600">Pinjaman</TableCell>
                       <TableCell className="text-forest-green-600">50,000,000 IDRX</TableCell>
                       <TableCell><Badge variant="default" className="bg-lime-green-500 text-white">Berhasil</Badge></TableCell>
                     </TableRow>
-                    <TableRow className="border-forest-green-700">
+                    <TableRow className="border-sage-green-500">
                       <TableCell className="text-forest-green-600">8 Jun 2024</TableCell>
                       <TableCell className="text-forest-green-600">Deposit</TableCell>
                       <TableCell className="text-forest-green-600">0.15 BTC</TableCell>
                       <TableCell><Badge variant="default" className="bg-lime-green-500 text-white">Berhasil</Badge></TableCell>
                     </TableRow>
-                    <TableRow className="border-forest-green-700">
+                    <TableRow className="border-sage-green-500">
                       <TableCell className="text-forest-green-600">5 Jun 2024</TableCell>
                       <TableCell className="text-forest-green-600">Pembayaran</TableCell>
                       <TableCell className="text-forest-green-600">2,500,000 IDRX</TableCell>

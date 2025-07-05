@@ -46,10 +46,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-forest-green-700">
+    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-sage-green-500">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-sage-green-500 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">DD</span>
           </div>
           <span className="font-bold text-xl text-forest-green-700">
@@ -93,7 +93,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           {!isConnected ? (
             <Button
-              className="bg-gradient-primary hover:opacity-90 text-white border-0"
+              className="bg-sage-green-500 hover:bg-sage-green-600 text-white border-0"
               size="sm"
               onClick={handleConnectWallet}
             >
@@ -103,11 +103,11 @@ const Navbar = () => {
           ) : (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm" className="border-forest-green-700 text-forest-green-700">
+                <Button variant="outline" size="sm" className="border-sage-green-500 text-sage-green-700">
                   {getShortenedAddress()}
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="border-forest-green-700">
+              <DropdownMenuContent align="end" className="border-sage-green-500">
                 <DropdownMenuItem
                   onClick={handleDisconnect}
                   className="text-red-600 cursor-pointer"

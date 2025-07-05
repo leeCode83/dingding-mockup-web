@@ -15,40 +15,40 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 15%;
 
-    /* Primary colors using the vibrant green */
-    --primary: 85 76% 44%;
+    /* Primary colors using the sage green */
+    --primary: 120 8% 29%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary colors using the sage green */
-    --secondary: 120 8% 29%;
+    /* Secondary colors using the forest green */
+    --secondary: 120 15% 20%;
     --secondary-foreground: 0 0% 100%;
 
     /* Muted colors using the cream tone */
     --muted: 60 100% 93%;
     --muted-foreground: 120 15% 25%;
 
-    /* Accent colors using the forest green */
-    --accent: 120 15% 20%;
+    /* Accent colors using the lime green */
+    --accent: 85 76% 44%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    /* Updated border color to use #2F3C33 */
-    --border: 120 15% 20%;
-    --input: 120 15% 20%;
-    --ring: 85 76% 44%;
+    /* Updated border color to use #48524A */
+    --border: 120 8% 29%;
+    --input: 120 8% 29%;
+    --ring: 120 8% 29%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 120 15% 25%;
-    --sidebar-primary: 85 76% 44%;
+    --sidebar-primary: 120 8% 29%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 60 100% 93%;
     --sidebar-accent-foreground: 120 15% 25%;
-    --sidebar-border: 120 15% 20%;
-    --sidebar-ring: 85 76% 44%;
+    --sidebar-border: 120 8% 29%;
+    --sidebar-ring: 120 8% 29%;
   }
 
   .dark {
@@ -61,33 +61,33 @@
     --popover: 120 15% 20%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 85 76% 44%;
+    --primary: 120 8% 29%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 8% 29%;
+    --secondary: 120 15% 25%;
     --secondary-foreground: 0 0% 95%;
 
     --muted: 120 15% 25%;
     --muted-foreground: 60 100% 85%;
 
-    --accent: 120 8% 29%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 85 76% 44%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 120 15% 25%;
-    --input: 120 15% 25%;
-    --ring: 85 76% 44%;
+    --border: 120 8% 29%;
+    --input: 120 8% 29%;
+    --ring: 120 8% 29%;
 
     --sidebar-background: 120 15% 18%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 85 76% 44%;
+    --sidebar-primary: 120 8% 29%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 120 15% 25%;
     --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 120 15% 25%;
-    --sidebar-ring: 85 76% 44%;
+    --sidebar-border: 120 8% 29%;
+    --sidebar-ring: 120 8% 29%;
   }
 }
 
@@ -101,31 +101,13 @@
   }
 }
 
-/* Custom gradient classes for the new color palette */
-.gradient-primary {
-  background: linear-gradient(135deg, #85CC17 0%, #2F3C33 100%);
-}
-
-.gradient-secondary {
-  background: linear-gradient(135deg, #F3FFDE 0%, #85CC17 100%);
-}
-
-.gradient-accent {
-  background: linear-gradient(135deg, #48524A 0%, #2F3C33 100%);
-}
-
-/* Custom border color class */
-.border-dark {
-  border-color: #2F3C33;
-}
-
-/* Button styling to match connect wallet button */
+/* Remove all gradient classes */
 .btn-primary {
-  background: linear-gradient(135deg, #85CC17 0%, #2F3C33 100%);
+  background: #48524A;
   color: white;
   border: none;
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
+  background: #3a423c;
 }
