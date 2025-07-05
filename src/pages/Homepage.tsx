@@ -21,27 +21,27 @@ const Homepage = () => {
       
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-green-50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-cream-50 to-sage-green-50" />
         <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+            <h1 className="text-4xl md:text-6xl font-bold text-forest-green-800">
               Pinjaman Mudah untuk{" "}
-              <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
                 UMKM Indonesia
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-forest-green-600 max-w-2xl mx-auto">
               Dapatkan pinjaman dalam IDRX dengan menggunakan crypto sebagai jaminan. 
               Proses cepat, aman, dan tanpa ribet.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/apply">
-                <Button size="lg" className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-6 text-lg">
+                <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-white px-8 py-6 text-lg border-0">
                   Ajukan Pinjaman Sekarang
                 </Button>
               </Link>
               <Link to="/dashboard">
-                <Button variant="outline" size="lg" className="px-8 py-6 text-lg">
+                <Button variant="outline" size="lg" className="px-8 py-6 text-lg border-sage-green-300 text-forest-green-700 hover:bg-sage-green-50">
                   Lihat Dashboard
                 </Button>
               </Link>
@@ -53,44 +53,44 @@ const Homepage = () => {
       {/* How It Works */}
       <section className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Cara Kerja Dingdong Loans</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-forest-green-800">Cara Kerja Dingdong Loans</h2>
+          <p className="text-forest-green-600 text-lg max-w-2xl mx-auto">
             Proses sederhana dalam 3 langkah untuk mendapatkan pinjaman
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="text-center border-0 shadow-lg">
+          <Card className="text-center border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">1</span>
               </div>
-              <CardTitle>Deposit Crypto</CardTitle>
-              <CardDescription>
+              <CardTitle className="text-forest-green-800">Deposit Crypto</CardTitle>
+              <CardDescription className="text-forest-green-600">
                 Setorkan aset crypto Anda sebagai jaminan untuk mendapatkan pinjaman
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="text-center border-0 shadow-lg">
+          <Card className="text-center border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">2</span>
               </div>
-              <CardTitle>Tentukan Jumlah</CardTitle>
-              <CardDescription>
+              <CardTitle className="text-forest-green-800">Tentukan Jumlah</CardTitle>
+              <CardDescription className="text-forest-green-600">
                 Pilih jumlah IDRX yang ingin dipinjam berdasarkan nilai jaminan Anda
               </CardDescription>
             </CardHeader>
           </Card>
 
-          <Card className="text-center border-0 shadow-lg">
+          <Card className="text-center border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
-              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">3</span>
               </div>
-              <CardTitle>Terima Pinjaman</CardTitle>
-              <CardDescription>
+              <CardTitle className="text-forest-green-800">Terima Pinjaman</CardTitle>
+              <CardDescription className="text-forest-green-600">
                 Dapatkan IDRX langsung ke wallet Anda dan gunakan untuk kebutuhan bisnis
               </CardDescription>
             </CardHeader>
@@ -99,51 +99,51 @@ const Homepage = () => {
       </section>
 
       {/* Benefits */}
-      <section className="bg-muted/30 py-20">
+      <section className="bg-cream-50 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Mengapa Pilih Dingdong Loans?</h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-forest-green-800">Mengapa Pilih Dingdong Loans?</h2>
+            <p className="text-forest-green-600 text-lg max-w-2xl mx-auto">
               Solusi pinjaman modern yang dirancang khusus untuk UMKM
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="border-0 shadow-lg">
+            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
-                <Clock className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">Proses Cepat</CardTitle>
-                <CardDescription>
+                <Clock className="w-12 h-12 text-lime-green-500 mx-auto mb-4" />
+                <CardTitle className="text-lg text-forest-green-800">Proses Cepat</CardTitle>
+                <CardDescription className="text-forest-green-600">
                   Persetujuan dalam hitungan menit, bukan hari
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
-                <Shield className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">100% Aman</CardTitle>
-                <CardDescription>
+                <Shield className="w-12 h-12 text-sage-green-500 mx-auto mb-4" />
+                <CardTitle className="text-lg text-forest-green-800">100% Aman</CardTitle>
+                <CardDescription className="text-forest-green-600">
                   Teknologi blockchain untuk keamanan maksimal
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
-                <TrendingUp className="w-12 h-12 text-blue-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">Bunga Kompetitif</CardTitle>
-                <CardDescription>
+                <TrendingUp className="w-12 h-12 text-lime-green-500 mx-auto mb-4" />
+                <CardTitle className="text-lg text-forest-green-800">Bunga Kompetitif</CardTitle>
+                <CardDescription className="text-forest-green-600">
                   Suku bunga rendah dan transparan
                 </CardDescription>
               </CardHeader>
             </Card>
 
-            <Card className="border-0 shadow-lg">
+            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
-                <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                <CardTitle className="text-lg">Tanpa Ribet</CardTitle>
-                <CardDescription>
+                <CheckCircle className="w-12 h-12 text-sage-green-500 mx-auto mb-4" />
+                <CardTitle className="text-lg text-forest-green-800">Tanpa Ribet</CardTitle>
+                <CardDescription className="text-forest-green-600">
                   Tidak perlu cek skor kredit tradisional
                 </CardDescription>
               </CardHeader>
@@ -154,7 +154,7 @@ const Homepage = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="bg-gradient-to-r from-blue-500 to-green-500 rounded-2xl p-12 text-center text-white">
+        <div className="bg-gradient-primary rounded-2xl p-12 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Siap Mengembangkan Bisnis Anda?
           </h2>
@@ -162,7 +162,7 @@ const Homepage = () => {
             Bergabung dengan ribuan UMKM yang sudah merasakan kemudahan Dingdong Loans
           </p>
           <Link to="/apply">
-            <Button size="lg" variant="secondary" className="px-8 py-6 text-lg">
+            <Button size="lg" variant="secondary" className="px-8 py-6 text-lg bg-white text-forest-green-700 hover:bg-cream-50">
               Mulai Sekarang
             </Button>
           </Link>

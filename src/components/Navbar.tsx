@@ -46,13 +46,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-sage-green-200">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">DD</span>
           </div>
-          <span className="font-bold text-xl text-foreground">
+          <span className="font-bold text-xl text-forest-green-700">
             Dingdong Loans
           </span>
         </Link>
@@ -60,31 +60,31 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-6">
           <Link
             to="/"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-forest-green-600 hover:text-lime-green-500 transition-colors font-medium"
           >
             Beranda
           </Link>
           <Link
             to="/dashboard"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-forest-green-600 hover:text-lime-green-500 transition-colors font-medium"
           >
             Dashboard
           </Link>
           <Link
             to="/faq"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-forest-green-600 hover:text-lime-green-500 transition-colors font-medium"
           >
             FAQ
           </Link>
           <Link
             to="/about"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-forest-green-600 hover:text-lime-green-500 transition-colors font-medium"
           >
             Tentang Kami
           </Link>
           <Link
             to="/whitepaper"
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-forest-green-600 hover:text-lime-green-500 transition-colors font-medium"
           >
             Whitepaper
           </Link>
@@ -93,7 +93,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           {!isConnected ? (
             <Button
-              className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600"
+              className="bg-gradient-primary hover:opacity-90 text-white border-0"
               size="sm"
               onClick={handleConnectWallet}
             >
@@ -103,7 +103,7 @@ const Navbar = () => {
           ) : (
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" className="border-sage-green-300 text-forest-green-700">
                   {getShortenedAddress()}
                 </Button>
               </DropdownMenuTrigger>

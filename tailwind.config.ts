@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,6 +64,55 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors from the palette
+				'forest-green': {
+					50: '#f0f4f1',
+					100: '#dce8de',
+					200: '#b9d1bd',
+					300: '#8fb497',
+					400: '#689371',
+					500: '#48524A',
+					600: '#3a423c',
+					700: '#2F3C33',
+					800: '#252e28',
+					900: '#1f261f',
+				},
+				'lime-green': {
+					50: '#f7fee7',
+					100: '#ecfccb',
+					200: '#d9f99d',
+					300: '#bef264',
+					400: '#a3e635',
+					500: '#85CC17',
+					600: '#65a30d',
+					700: '#4d7c0f',
+					800: '#3f6212',
+					900: '#365314',
+				},
+				'sage-green': {
+					50: '#f6f7f6',
+					100: '#e3e6e3',
+					200: '#c7cdc7',
+					300: '#a3aca3',
+					400: '#7a857a',
+					500: '#5d685d',
+					600: '#48524A',
+					700: '#3c443c',
+					800: '#323832',
+					900: '#2b2f2b',
+				},
+				'cream': {
+					50: '#F3FFDE',
+					100: '#eeffd5',
+					200: '#dfffab',
+					300: '#cbff76',
+					400: '#b5ff42',
+					500: '#9eff0d',
+					600: '#7dd100',
+					700: '#5ea000',
+					800: '#4a7d00',
+					900: '#3e6600',
 				}
 			},
 			borderRadius: {
@@ -97,6 +145,9 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				'gradient-primary': 'linear-gradient(135deg, #85CC17 0%, #2F3C33 100%)',
+				'gradient-secondary': 'linear-gradient(135deg, #F3FFDE 0%, #85CC17 100%)',
+				'gradient-accent': 'linear-gradient(135deg, #48524A 0%, #2F3C33 100%)',
 			}
 		}
 	},
