@@ -34,8 +34,9 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 60 100% 90%;
-    --input: 60 100% 90%;
+    /* Updated border color to use #2F3C33 */
+    --border: 120 15% 20%;
+    --input: 120 15% 20%;
     --ring: 85 76% 44%;
 
     --radius: 0.5rem;
@@ -46,7 +47,7 @@
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 60 100% 93%;
     --sidebar-accent-foreground: 120 15% 25%;
-    --sidebar-border: 60 100% 88%;
+    --sidebar-border: 120 15% 20%;
     --sidebar-ring: 85 76% 44%;
   }
 
@@ -111,4 +112,20 @@
 
 .gradient-accent {
   background: linear-gradient(135deg, #48524A 0%, #2F3C33 100%);
+}
+
+/* Custom border color class */
+.border-dark {
+  border-color: #2F3C33;
+}
+
+/* Button styling to match connect wallet button */
+.btn-primary {
+  background: linear-gradient(135deg, #85CC17 0%, #2F3C33 100%);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
 }

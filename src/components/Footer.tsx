@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-sage-green-50 mt-20 border-t border-sage-green-200">
+    <footer className="bg-sage-green-50 mt-20 border-t border-forest-green-700">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -117,7 +117,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-sage-green-200 mt-8 pt-8 text-center text-sm text-forest-green-600">
+        <div className="border-t border-forest-green-700 mt-8 pt-8 text-center text-sm text-forest-green-600">
           <p>&copy; 2024 Dingdong Loans. All rights reserved.</p>
         </div>
       </div>

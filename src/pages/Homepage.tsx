@@ -36,12 +36,12 @@ const Homepage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/apply">
-                <Button size="lg" className="bg-gradient-primary hover:opacity-90 text-white px-8 py-6 text-lg border-0">
+                <Button size="lg" className="px-8 py-6 text-lg">
                   Ajukan Pinjaman Sekarang
                 </Button>
               </Link>
               <Link to="/dashboard">
-                <Button variant="outline" size="lg" className="px-8 py-6 text-lg border-sage-green-300 text-forest-green-700 hover:bg-sage-green-50">
+                <Button variant="outline" size="lg" className="px-8 py-6 text-lg">
                   Lihat Dashboard
                 </Button>
               </Link>
@@ -60,7 +60,7 @@ const Homepage = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <Card className="text-center border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow">
+          <Card className="text-center border-forest-green-700 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">1</span>
@@ -72,7 +72,7 @@ const Homepage = () => {
             </CardHeader>
           </Card>
 
-          <Card className="text-center border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow">
+          <Card className="text-center border-forest-green-700 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">2</span>
@@ -84,7 +84,7 @@ const Homepage = () => {
             </CardHeader>
           </Card>
 
-          <Card className="text-center border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow">
+          <Card className="text-center border-forest-green-700 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader>
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">3</span>
@@ -109,7 +109,7 @@ const Homepage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
+            <Card className="border-forest-green-700 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
                 <Clock className="w-12 h-12 text-lime-green-500 mx-auto mb-4" />
                 <CardTitle className="text-lg text-forest-green-800">Proses Cepat</CardTitle>
@@ -119,7 +119,7 @@ const Homepage = () => {
               </CardHeader>
             </Card>
 
-            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
+            <Card className="border-forest-green-700 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
                 <Shield className="w-12 h-12 text-sage-green-500 mx-auto mb-4" />
                 <CardTitle className="text-lg text-forest-green-800">100% Aman</CardTitle>
@@ -129,7 +129,7 @@ const Homepage = () => {
               </CardHeader>
             </Card>
 
-            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
+            <Card className="border-forest-green-700 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
                 <TrendingUp className="w-12 h-12 text-lime-green-500 mx-auto mb-4" />
                 <CardTitle className="text-lg text-forest-green-800">Bunga Kompetitif</CardTitle>
@@ -139,7 +139,7 @@ const Homepage = () => {
               </CardHeader>
             </Card>
 
-            <Card className="border-sage-green-200 shadow-lg hover:shadow-xl transition-shadow bg-white">
+            <Card className="border-forest-green-700 shadow-lg hover:shadow-xl transition-shadow bg-white">
               <CardHeader className="text-center">
                 <CheckCircle className="w-12 h-12 text-sage-green-500 mx-auto mb-4" />
                 <CardTitle className="text-lg text-forest-green-800">Tanpa Ribet</CardTitle>
@@ -154,7 +154,7 @@ const Homepage = () => {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="bg-gradient-primary rounded-2xl p-12 text-center text-white">
+        <div className="bg-gradient-primary rounded-2xl p-12 text-center text-white border border-forest-green-700">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Siap Mengembangkan Bisnis Anda?
           </h2>

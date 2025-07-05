@@ -104,16 +104,16 @@ const ApplyLoan = () => {
         <div className="min-h-screen bg-background"><Navbar />
             <div className="container mx-auto px-4 py-8 flex items-center justify-center min-h-[calc(100vh-200px)]">
             <div className="max-w-2xl mx-auto text-center">
-                <Card>
+                <Card className="border-forest-green-700">
                 <CardContent className="pt-6">
-                    <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                    <h2 className="text-2xl font-bold mb-4">Aplikasi Pinjaman Terkirim!</h2>
-                    <p className="text-muted-foreground mb-6">Selamat! Aplikasi pinjaman Anda sedang diproses. Dana akan cair ke wallet Anda dalam 5-15 menit.</p>
-                    <div className="bg-blue-50 p-4 rounded-lg mb-6 text-left">
+                    <CheckCircle className="w-16 h-16 text-lime-green-500 mx-auto mb-4" />
+                    <h2 className="text-2xl font-bold mb-4 text-forest-green-800">Aplikasi Pinjaman Terkirim!</h2>
+                    <p className="text-forest-green-600 mb-6">Selamat! Aplikasi pinjaman Anda sedang diproses. Dana akan cair ke wallet Anda dalam 5-15 menit.</p>
+                    <div className="bg-cream-50 p-4 rounded-lg mb-6 text-left border border-forest-green-700">
                     <div className="text-sm space-y-2">
-                        <div className="flex justify-between"><span>Jumlah Pinjaman:</span><span className="font-medium">Rp {parseFloat(loanAmount).toLocaleString('id-ID')}</span></div>
-                        <div className="flex justify-between"><span>Jangka Waktu:</span><span className="font-medium">{duration} Bulan</span></div>
-                        <div className="flex justify-between"><span>Cicilan Bulanan:</span><span className="font-medium">Rp {monthlyPayment.toLocaleString('id-ID')}</span></div>
+                        <div className="flex justify-between"><span className="text-forest-green-600">Jumlah Pinjaman:</span><span className="font-medium text-forest-green-800">Rp {parseFloat(loanAmount).toLocaleString('id-ID')}</span></div>
+                        <div className="flex justify-between"><span className="text-forest-green-600">Jangka Waktu:</span><span className="font-medium text-forest-green-800">{duration} Bulan</span></div>
+                        <div className="flex justify-between"><span className="text-forest-green-600">Cicilan Bulanan:</span><span className="font-medium text-forest-green-800">Rp {monthlyPayment.toLocaleString('id-ID')}</span></div>
                     </div>
                     </div>
                     <Button className="w-full" size="lg" onClick={proceedToDashboard}>Kembali ke Dashboard <ArrowRight className="w-4 h-4 ml-2" /></Button>
@@ -130,15 +130,15 @@ const ApplyLoan = () => {
       <div className="min-h-screen bg-background"><Navbar />
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-4xl mx-auto">
-            <div className="mb-8"><h1 className="text-3xl font-bold mb-2">Ajukan Pinjaman</h1><p className="text-muted-foreground">Dapatkan IDRX dengan mudah berdasarkan jaminan yang Anda miliki.</p></div>
+            <div className="mb-8"><h1 className="text-3xl font-bold mb-2 text-forest-green-800">Ajukan Pinjaman</h1><p className="text-forest-green-600">Dapatkan IDRX dengan mudah berdasarkan jaminan yang Anda miliki.</p></div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Application Form */}
-              <Card>
+              <Card className="border-forest-green-700">
                 <CardHeader>
                   <div className="flex justify-between items-center">
                     <div>
-                      <CardTitle>Detail Pinjaman</CardTitle>
-                      <CardDescription>Isi form berikut untuk mengajukan pinjaman.</CardDescription>
+                      <CardTitle className="text-forest-green-800">Detail Pinjaman</CardTitle>
+                      <CardDescription className="text-forest-green-600">Isi form berikut untuk mengajukan pinjaman.</CardDescription>
                     </div>
                     <DialogTrigger asChild>
                       <Button variant="outline" size="icon" className="flex-shrink-0" onClick={() => setCurrentTutorialStepIndex(0)}> {/* */}
@@ -148,37 +148,37 @@ const ApplyLoan = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <Card className="bg-gray-50/50">
+                  <Card className="bg-cream-50 border-forest-green-700">
                     <CardContent className="pt-4 space-y-3">
-                      <div className="flex justify-between items-center text-sm"><span className="text-muted-foreground flex items-center"><Wallet className="w-4 h-4 mr-2"/>Total Jaminan Anda</span><span className="font-medium">${totalCollateralValueUSD.toLocaleString('en-US')}</span></div>
-                      <div className="flex justify-between items-center text-sm"><span className="text-muted-foreground flex items-center"><TrendingUp className="w-4 h-4 mr-2"/>Maksimal Pinjaman</span><span className="font-medium text-green-600">Rp {maxLoanableIDRX.toLocaleString('id-ID')}</span></div>
+                      <div className="flex justify-between items-center text-sm"><span className="text-forest-green-600 flex items-center"><Wallet className="w-4 h-4 mr-2"/>Total Jaminan Anda</span><span className="font-medium text-forest-green-800">${totalCollateralValueUSD.toLocaleString('en-US')}</span></div>
+                      <div className="flex justify-between items-center text-sm"><span className="text-forest-green-600 flex items-center"><TrendingUp className="w-4 h-4 mr-2"/>Maksimal Pinjaman</span><span className="font-medium text-lime-green-500">Rp {maxLoanableIDRX.toLocaleString('id-ID')}</span></div>
                     </CardContent>
                   </Card>
                   <div className="space-y-2">
-                    <Label htmlFor="amount">Jumlah Pinjaman (IDRX)</Label>
-                    <Input id="amount" type="number" placeholder="50000000" value={loanAmount} onChange={(e) => setLoanAmount(e.target.value)} className={isLoanAmountExceeded ? "border-red-500 focus-visible:ring-red-500" : ""}/>
-                    {isLoanAmountExceeded && (<Alert variant="destructive" className="mt-2 text-xs"><AlertCircle className="h-4 w-4" /><AlertDescription>Jumlah pinjaman melebihi batas maksimal.</AlertDescription></Alert>)}
+                    <Label htmlFor="amount" className="text-forest-green-700">Jumlah Pinjaman (IDRX)</Label>
+                    <Input id="amount" type="number" placeholder="50000000" value={loanAmount} onChange={(e) => setLoanAmount(e.target.value)} className={`border-forest-green-700 ${isLoanAmountExceeded ? "border-red-500 focus-visible:ring-red-500" : ""}`}/>
+                    {isLoanAmountExceeded && (<Alert variant="destructive" className="mt-2 text-xs border-red-500"><AlertCircle className="h-4 w-4" /><AlertDescription>Jumlah pinjaman melebihi batas maksimal.</AlertDescription></Alert>)}
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="duration">Jangka Waktu (Bulan)</Label>
-                    <Select value={duration} onValueChange={setDuration}><SelectTrigger><SelectValue placeholder="Pilih jangka waktu" /></SelectTrigger><SelectContent><SelectItem value="6">6 Bulan</SelectItem><SelectItem value="12">12 Bulan</SelectItem><SelectItem value="18">18 Bulan</SelectItem><SelectItem value="24">24 Bulan</SelectItem></SelectContent></Select>
+                    <Label htmlFor="duration" className="text-forest-green-700">Jangka Waktu (Bulan)</Label>
+                    <Select value={duration} onValueChange={setDuration}><SelectTrigger className="border-forest-green-700"><SelectValue placeholder="Pilih jangka waktu" /></SelectTrigger><SelectContent className="border-forest-green-700"><SelectItem value="6">6 Bulan</SelectItem><SelectItem value="12">12 Bulan</SelectItem><SelectItem value="18">18 Bulan</SelectItem><SelectItem value="24">24 Bulan</SelectItem></SelectContent></Select>
                   </div>
                 </CardContent>
               </Card>
 
               {/* Loan Summary */}
-              <Card>
-                <CardHeader><CardTitle className="flex items-center"><Calculator className="w-5 h-5 mr-2" />Ringkasan Pinjaman</CardTitle><CardDescription>Perhitungan berdasarkan input Anda.</CardDescription></CardHeader>
+              <Card className="border-forest-green-700">
+                <CardHeader><CardTitle className="flex items-center text-forest-green-800"><Calculator className="w-5 h-5 mr-2" />Ringkasan Pinjaman</CardTitle><CardDescription className="text-forest-green-600">Perhitungan berdasarkan input Anda.</CardDescription></CardHeader>
                 <CardContent className="space-y-6">
                   <div className="space-y-4">
-                    <div className="flex justify-between items-center"><span className="text-muted-foreground">Jumlah Pinjaman</span><span className="font-medium">{loanAmount ? `Rp ${parseFloat(loanAmount).toLocaleString('id-ID')}` : '-'}</span></div>
-                    <div className="flex justify-between items-center"><span className="text-muted-foreground">Jangka Waktu</span><span className="font-medium">{duration ? `${duration} Bulan` : '-'}</span></div>
-                    <div className="flex justify-between items-center"><span className="text-muted-foreground">Suku Bunga</span><span className="font-medium">8.5% per tahun</span></div>
-                    <div className="flex justify-between items-center text-lg"><span className="text-muted-foreground">Pembayaran Bulanan</span><span className="font-bold text-blue-600">{monthlyPayment > 0 ? `Rp ${monthlyPayment.toLocaleString('id-ID')}` : '-'}</span></div>
-                    <div className="flex justify-between items-center"><span className="text-muted-foreground">LTV Setelah Pinjaman</span><Badge variant="outline">{loanAmount ? `${((parseFloat(loanAmount) / usdToIdrRate) / totalCollateralValueUSD * 100).toFixed(2)}%` : '0.00%'}</Badge></div>
+                    <div className="flex justify-between items-center"><span className="text-forest-green-600">Jumlah Pinjaman</span><span className="font-medium text-forest-green-800">{loanAmount ? `Rp ${parseFloat(loanAmount).toLocaleString('id-ID')}` : '-'}</span></div>
+                    <div className="flex justify-between items-center"><span className="text-forest-green-600">Jangka Waktu</span><span className="font-medium text-forest-green-800">{duration ? `${duration} Bulan` : '-'}</span></div>
+                    <div className="flex justify-between items-center"><span className="text-forest-green-600">Suku Bunga</span><span className="font-medium text-forest-green-800">8.5% per tahun</span></div>
+                    <div className="flex justify-between items-center text-lg"><span className="text-forest-green-600">Pembayaran Bulanan</span><span className="font-bold text-lime-green-500">{monthlyPayment > 0 ? `Rp ${monthlyPayment.toLocaleString('id-ID')}` : '-'}</span></div>
+                    <div className="flex justify-between items-center"><span className="text-forest-green-600">LTV Setelah Pinjaman</span><Badge variant="outline" className="border-forest-green-700 text-forest-green-700">{loanAmount ? `${((parseFloat(loanAmount) / usdToIdrRate) / totalCollateralValueUSD * 100).toFixed(2)}%` : '0.00%'}</Badge></div>
                   </div>
-                  <div className="border-t pt-4">
-                    <Button className="w-full bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600" size="lg" onClick={handleSubmit} disabled={!loanAmount || !duration || loading || isLoanAmountExceeded}>{loading ? "Memproses Aplikasi..." : "Ajukan Pinjaman"}</Button>
+                  <div className="border-t border-forest-green-700 pt-4">
+                    <Button className="w-full" size="lg" onClick={handleSubmit} disabled={!loanAmount || !duration || loading || isLoanAmountExceeded}>{loading ? "Memproses Aplikasi..." : "Ajukan Pinjaman"}</Button>
                   </div>
                 </CardContent>
               </Card>
@@ -188,14 +188,14 @@ const ApplyLoan = () => {
         <Footer />
       </div>
 
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] border-forest-green-700">
         <DialogHeader>
-          <DialogTitle>Cara Mengajukan Pinjaman</DialogTitle>
+          <DialogTitle className="text-forest-green-800">Cara Mengajukan Pinjaman</DialogTitle>
         </DialogHeader>
-        <Card>
+        <Card className="border-forest-green-700">
             <CardContent className="flex flex-col items-center justify-center p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-center">{currentTutorialStep.title}</h3> {/* */}
-              <p className="text-sm text-muted-foreground text-center">{currentTutorialStep.description}</p> {/* */}
+              <h3 className="text-lg font-semibold text-center text-forest-green-800">{currentTutorialStep.title}</h3> {/* */}
+              <p className="text-sm text-forest-green-600 text-center">{currentTutorialStep.description}</p> {/* */}
               <div className="flex justify-between w-full mt-4">
                 <Button
                   variant="outline"
